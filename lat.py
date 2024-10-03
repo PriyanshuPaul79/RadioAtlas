@@ -18,8 +18,8 @@ country_flags = {
     'India': 'assets/India.jpg',
     'Canada': 'assets/canada.jpg',
     'Brazil': 'assets/Brazil.jpg',
-    'United Kingdom': 'assets/uk(1).png',
-    'Germany': 'assets/germany.png'
+    'United Kingdom': 'assets/uk..jpg',
+    'Germany': 'assets/germany..jpg'
 }
 
 # Streamlit app starts here
