@@ -15,11 +15,11 @@ def get_radio_stations_by_country(country):
 
 # Mapping of countries to local flag file paths
 country_flags = {
-    'India': 'assets/India.jpg',
-    'Canada': 'assets/canada.jpg',
-    'Brazil': 'assets/Brazil.jpg',
-    'United Kingdom': 'assets/uk..jpg',
-    'Germany': 'assets/germany..jpg'
+    'India': 'assets/globe_India.jpg',
+    'Canada': 'assets/globe_canada.jpg',
+    'Brazil': 'assets/globe_brazil.jpg',
+    'United Kingdom': 'assets/globe_uk.jpg',
+    'Germany': 'assets/globe_germany.jpg'
 }
 
 # Streamlit app starts here
