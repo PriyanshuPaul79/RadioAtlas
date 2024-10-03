@@ -57,10 +57,6 @@ Local flag images are stored in the `assets` folder. Make sure the correct path 
 
 This app uses the [Radio Browser API](https://de1.api.radio-browser.info/) to fetch radio station data by country.
 
-## Screenshots
-
-_(Add screenshots of your app here)_
-
 ## Contributing
 
 Feel free to submit issues or contribute to the project by creating a pull request.
