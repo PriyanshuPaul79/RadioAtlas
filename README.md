@@ -49,9 +49,13 @@ You can install all dependencies using the provided `requirements.txt` file.
 3. Choose a station from the filtered results and start listening!
 4. View the station's location on a map and add it to your favorites for future listening.
 
-## Country Flags
+## Country Images
 
-Local flag images are stored in the `assets` folder. Make sure the correct path for the flag files is provided, or the app will display an error.
+Country images are stored in the `assets` folder. The application has been updated to use a new set of map-style images with a consistent visual style for all countries.
+
+If you're setting up the application for the first time or want to update the country images, please refer to the `IMAGE_REPLACEMENT_INSTRUCTIONS.md` file for detailed instructions on how to prepare and install the new images.
+
+The application will attempt to use the new map-style images first, and fall back to the legacy globe-style images if the new ones are not available.
 
 ## API
 
