@@ -16,7 +16,7 @@ if not os.path.exists('cache'):
 # Removed @st.cache_data decorator to fix CacheReplayClosureError
 def get_radio_stations_by_country(country, force_refresh=False):
     """
-    Fetches radio stations from the API.
+    Fetches radio stations from the API. 
     1. Tries to get live data from the API.
     2. If successful, saves the data to a local cache file.
     3. If the API fails, it tries to load data from the cache file.
@@ -37,6 +37,7 @@ def get_radio_stations_by_country(country, force_refresh=False):
             # Step 1: Try to fetch live data
             response = requests.get(url, timeout=10)  # Added a timeout for safety
             response.raise_for_status()
+            # check for error 
             stations = response.json()
 
             # Step 2: If successful, save to the cache file
