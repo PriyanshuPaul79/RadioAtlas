@@ -9,6 +9,27 @@
 - ❤️ **Favorites**: Add stations to your favorites for easy access later.
 - 📍 **Map Integration**: View the geographical location of radio stations on an interactive `folium` map.
 - 🎨 **Flag Display**: See the country flag corresponding to the selected country.
+- 💾 **Offline Caching**: Works offline after first load by caching station data.
+- 🎲 **Radio Roulette**: Discover a random station, with a preference for your favorite genres/languages.
+- 🤝 **Recommendations**: Get "You Might Also Like..." suggestions based on the selected station's genre.
+
+## Screenshots
+
+> _Below are some screenshots of the app in action:_
+
+### Home Page
+![Home Page](screenshots/screenshot_home.png)
+
+### Filters and Station List
+![Filters and Station List](screenshots/screenshot_filters.png)
+
+### Station Map View
+![Station Map](screenshots/screenshot_map.png)
+
+### Favorites and Recommendations
+![Favorites and Recommendations](screenshots/screenshot_favorites.png)
+
+*You can add or update screenshots in the `screenshots/` folder.*
 
 ## Installation
 
@@ -30,7 +51,7 @@ To run the application locally, follow these steps:
 3. Run the Streamlit app:
 
    ```bash
-   streamlit run app.py
+   streamlit run radioatlas_updated.py
    ```
 
 ## Dependencies
