@@ -18,16 +18,13 @@
 > _Below are some screenshots of the app in action:_
 
 ### Home Page
-![Home Page](screenshots/screenshot_home.png)
+![Home Page](assets/Home.png)
 
 ### Filters and Station List
-![Filters and Station List](screenshots/screenshot_filters.png)
+![Filters and Station List](assets/filter.png)
 
 ### Station Map View
-![Station Map](screenshots/screenshot_map.png)
-
-### Favorites and Recommendations
-![Favorites and Recommendations](screenshots/screenshot_favorites.png)
+![Station Map](assets/station_map.png)
 
 *You can add or update screenshots in the `screenshots/` folder.*
 
@@ -60,6 +57,7 @@ To run the application locally, follow these steps:
 - [Folium](https://python-visualization.github.io/folium/) for displaying maps.
 - [Streamlit-Folium](https://github.com/randyzwitch/streamlit-folium) to integrate Folium maps into Streamlit.
 - [Requests](https://docs.python-requests.org/en/latest/) to fetch radio station data from the Radio Browser API.
+- [Pillow](https://python-pillow.org/) for image processing of country flags.
 
 You can install all dependencies using the provided `requirements.txt` file.
 
@@ -69,14 +67,30 @@ You can install all dependencies using the provided `requirements.txt` file.
 2. Search or filter radio stations by genre, language, or bitrate.
 3. Choose a station from the filtered results and start listening!
 4. View the station's location on a map and add it to your favorites for future listening.
+5. Try the "Radio Roulette" feature to discover new stations.
+6. Check out the "You Might Also Like" recommendations based on your selected station.
 
 ## Country Images
 
-Country images are stored in the `assets` folder. The application has been updated to use a new set of map-style images with a consistent visual style for all countries.
+Country images are stored in the `assets` folder. The application currently uses globe-style images for countries.
 
-If you're setting up the application for the first time or want to update the country images, please refer to the `IMAGE_REPLACEMENT_INSTRUCTIONS.md` file for detailed instructions on how to prepare and install the new images.
+The file naming convention for country images is:
+- `globe_India.jpg`
+- `globe_canada.png`
+- `globe_brazil.jpg`
+- `globe_uk.png`
+- `globe_germany.png`
 
-The application will attempt to use the new map-style images first, and fall back to the legacy globe-style images if the new ones are not available.
+If you want to update the country images to the new map-style images, please refer to the `IMAGE_REPLACEMENT_INSTRUCTIONS.md` file for detailed instructions on how to prepare and install the new images.
+
+## Offline Mode
+
+RadioAtlas includes an offline caching feature that allows you to use the app without an internet connection after the first load:
+
+1. When you first select a country, the app fetches station data from the Radio Browser API.
+2. This data is automatically saved to a local cache file in the `cache` directory.
+3. If you later use the app without an internet connection, it will load the cached data.
+4. You can manually refresh the data by clicking the "🔄 Refresh Data" button when online.
 
 ## API
 
@@ -84,7 +98,13 @@ This app uses the [Radio Browser API](https://de1.api.radio-browser.info/) to fe
 
 ## Contributing
 
-Feel free to submit issues or contribute to the project by creating a pull request.
+Feel free to submit issues or contribute to the project by creating a pull request. Here are some ways you can contribute:
+
+1. Add support for more countries
+2. Improve the UI/UX design
+3. Add new features or enhance existing ones
+4. Fix bugs or optimize performance
+5. Update documentation
 
 ## License
 
